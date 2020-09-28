@@ -1,9 +1,9 @@
 import { stat } from 'fs/promises';
-import supertest from 'supertest'
+import supertest from 'supertest';
 describe('Beach forecast functional test', () => {
   it('should return a forecast with just a few times', async () => {
-    const { body, status } = await global.testRequest.get('/forecast')
+    const { body, status } = await global.testRequest.get('/forecast');
     expect(status).toBe(200);
-    expect(body).toEqual([])
-  })
+    expect(body).toEqual([]);
+  });
 });
