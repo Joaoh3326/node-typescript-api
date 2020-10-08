@@ -5,7 +5,6 @@ import { ForecastController } from './controllers/forecast';
 import { Application } from 'express';
 import * as database from '@src/database';
 import { BeachesController } from './controllers/beaches';
-import { hostname } from 'os';
 
 export class SetupServer extends Server {
   constructor(private port = 3000) {
