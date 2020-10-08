@@ -6,7 +6,7 @@
       }
     },
     "database": {
-      "mongoUrl": "mongodb://localhost:27017/surf-forecast-test"
+      "mongoUrl": "mongodb+srv://joao:jo123456@cluster0.i2lqa.mongodb.net/surf-forecast-test?retryWrites=true&w=majority"
     },
     "logger": {
       "enabled": false
