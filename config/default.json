@@ -2,7 +2,7 @@
   "App": {
     "port": 3000,
     "database": {
-      "mongoUrl": "mongo-url"
+      "mongoUrl": "mongodb+srv://joao:jo123456@cluster0.i2lqa.mongodb.net/surf-forecast?retryWrites=true&w=majority"
     },
     "auth": {
       "key": "some-key",
