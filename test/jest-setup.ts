@@ -9,3 +9,5 @@ beforeAll(async () => {
 })
 
 afterAll(async () => await server.close());
+
+jest.setTimeout(30000);
