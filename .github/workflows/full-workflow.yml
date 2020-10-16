@@ -1,7 +1,10 @@
 
 name: Complete Workflow
 
-on: ['push']
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
@@ -29,3 +32,11 @@ jobs:
 
     - name: Run all tests
       run: yarn test
+
+    - name: Deploy Heroku
+      uses: actions/checkout@v2
+      uses: akhileshns/heroku-deploy@v3.5.7 # This is the action
+      with:
+        heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+        heroku_app_name: "jh-surf-forecast" #Must be unique in Heroku
+        heroku_email: "joaoh3326@gmail.com"
